@@ -627,8 +627,6 @@ setsel(char *str, Time t)
 	XSetSelectionOwner(xw.dpy, XA_PRIMARY, xw.win, t);
 	if (XGetSelectionOwner(xw.dpy, XA_PRIMARY) != xw.win)
 		selclear();
-
-	clipcopy(NULL);
 }
 
 void
@@ -646,7 +644,7 @@ brelease(XEvent *e)
 	}
 
 	if (e->xbutton.button == Button2)
-		clippaste(NULL);
+		selpaste(NULL);
 	else if (e->xbutton.button == Button1)
 		mousesel(e, 1);
 }

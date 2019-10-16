@@ -165,4 +165,4 @@ static Button buttons[] = {
 	{ OnMedia,      MODKEY,         1,      clickexternplayer, { 0 },       1 },
 };
 
-#define HOMEPAGE "https://duckduckgo.com/html"
+#define HOMEPAGE "/home/lyes/.config/surf/homepage/home.html"

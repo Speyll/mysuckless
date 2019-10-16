@@ -1750,8 +1750,12 @@ main(int argc, char *argv[])
 	} ARGEND;
 	if (argc > 0)
 		arg.v = argv[0];
-	else
+    else
+    #ifdef HOMEPAGE	
+        arg.v = HOMEPAGE;
+    #else
 		arg.v = "about:blank";
+    #endif
 
 	setup();
 	c = newclient(NULL);

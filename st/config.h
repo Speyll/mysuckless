@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "cherry:pixelsize=12:autohint=false";
+static char *font = "cherry:pixelsize=11:autohint=false";
 static int borderpx = 25;
 
 /*

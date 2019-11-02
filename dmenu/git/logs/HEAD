@@ -1,0 +1,36 @@
+0000000000000000000000000000000000000000 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572656436 +0100	clone: from https://git.suckless.org/dmenu
+db6093f6ec1bb884f7540f2512935b5254750b30 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572656813 +0100	checkout: moving from master to config
+db6093f6ec1bb884f7540f2512935b5254750b30 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572656981 +0100	checkout: moving from config to master
+db6093f6ec1bb884f7540f2512935b5254750b30 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572657045 +0100	reset: moving to origin/master
+db6093f6ec1bb884f7540f2512935b5254750b30 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572657069 +0100	checkout: moving from master to config
+db6093f6ec1bb884f7540f2512935b5254750b30 089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 Speyll <Aspiicote@gmail.com> 1572657990 +0100	commit: config
+089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572658030 +0100	checkout: moving from config to master
+db6093f6ec1bb884f7540f2512935b5254750b30 089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 Speyll <Aspiicote@gmail.com> 1572658078 +0100	merge config: Fast-forward (no commit created; -m option ignored)
+089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572658302 +0100	reset: moving to origin/master
+db6093f6ec1bb884f7540f2512935b5254750b30 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572658354 +0100	checkout: moving from master to height
+db6093f6ec1bb884f7540f2512935b5254750b30 1a21b35810989954e07d5642faf57ea52f36130a Speyll <Aspiicote@gmail.com> 1572658498 +0100	commit: height
+1a21b35810989954e07d5642faf57ea52f36130a db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572658505 +0100	checkout: moving from height to master
+db6093f6ec1bb884f7540f2512935b5254750b30 089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 Speyll <Aspiicote@gmail.com> 1572658517 +0100	merge config: Fast-forward (no commit created; -m option ignored)
+089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 411edd9b926d61035bcc842a82f85f7a833698f2 Speyll <Aspiicote@gmail.com> 1572658528 +0100	merge height: Merge made by the 'recursive' strategy.
+411edd9b926d61035bcc842a82f85f7a833698f2 1a21b35810989954e07d5642faf57ea52f36130a Speyll <Aspiicote@gmail.com> 1572658574 +0100	checkout: moving from master to height
+1a21b35810989954e07d5642faf57ea52f36130a db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572658642 +0100	reset: moving to origin/master
+db6093f6ec1bb884f7540f2512935b5254750b30 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572658655 +0100	checkout: moving from height to height
+db6093f6ec1bb884f7540f2512935b5254750b30 1a006b9f9427f7d9ec5f6d92c3561c3a732b4005 Speyll <Aspiicote@gmail.com> 1572658723 +0100	commit: height
+1a006b9f9427f7d9ec5f6d92c3561c3a732b4005 411edd9b926d61035bcc842a82f85f7a833698f2 Speyll <Aspiicote@gmail.com> 1572658744 +0100	checkout: moving from height to master
+411edd9b926d61035bcc842a82f85f7a833698f2 1a006b9f9427f7d9ec5f6d92c3561c3a732b4005 Speyll <Aspiicote@gmail.com> 1572658793 +0100	checkout: moving from master to height
+1a006b9f9427f7d9ec5f6d92c3561c3a732b4005 43a911bdd84f3aceffb36dff38028c4c23e7b346 Speyll <Aspiicote@gmail.com> 1572658817 +0100	commit: height
+43a911bdd84f3aceffb36dff38028c4c23e7b346 411edd9b926d61035bcc842a82f85f7a833698f2 Speyll <Aspiicote@gmail.com> 1572658854 +0100	checkout: moving from height to master
+411edd9b926d61035bcc842a82f85f7a833698f2 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572658893 +0100	reset: moving to origin/master
+db6093f6ec1bb884f7540f2512935b5254750b30 089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 Speyll <Aspiicote@gmail.com> 1572658897 +0100	merge config: Fast-forward (no commit created; -m option ignored)
+089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 e29265a441d51e48e9b50f92e01f99b0cc7224ed Speyll <Aspiicote@gmail.com> 1572658900 +0100	merge height: Merge made by the 'recursive' strategy.
+e29265a441d51e48e9b50f92e01f99b0cc7224ed db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572658973 +0100	reset: moving to origin/master
+db6093f6ec1bb884f7540f2512935b5254750b30 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572658989 +0100	checkout: moving from master to border
+db6093f6ec1bb884f7540f2512935b5254750b30 11b7b900455dfe2d689bcf975828bb7386142313 Speyll <Aspiicote@gmail.com> 1572659421 +0100	commit: border
+11b7b900455dfe2d689bcf975828bb7386142313 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572659442 +0100	checkout: moving from border to master
+db6093f6ec1bb884f7540f2512935b5254750b30 089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 Speyll <Aspiicote@gmail.com> 1572659479 +0100	merge config: Fast-forward (no commit created; -m option ignored)
+089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 73d2197819de25a9dda543b80aebf023a1a21eed Speyll <Aspiicote@gmail.com> 1572659492 +0100	merge height: Merge made by the 'recursive' strategy.
+73d2197819de25a9dda543b80aebf023a1a21eed a2683ecab48179b5edf9753ad92564fe45823514 Speyll <Aspiicote@gmail.com> 1572659504 +0100	merge border: Merge made by the 'recursive' strategy.
+a2683ecab48179b5edf9753ad92564fe45823514 db6093f6ec1bb884f7540f2512935b5254750b30 Speyll <Aspiicote@gmail.com> 1572659586 +0100	reset: moving to origin/master
+db6093f6ec1bb884f7540f2512935b5254750b30 089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 Speyll <Aspiicote@gmail.com> 1572660240 +0100	merge config: Fast-forward (no commit created; -m option ignored)
+089fbdd4b92a6e68eef193b783d6dfe5d5ac4ee9 81d135ece891fe0afde6cb32ea6d7e2373a39998 Speyll <Aspiicote@gmail.com> 1572660245 +0100	merge height: Merge made by the 'recursive' strategy.
+81d135ece891fe0afde6cb32ea6d7e2373a39998 853969208c1c23a6f6704e8a5205346887dc8d7c Speyll <Aspiicote@gmail.com> 1572660250 +0100	merge border: Merge made by the 'recursive' strategy.

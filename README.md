@@ -1,2 +1,2 @@
 # Suckless
-My personal suckless configs
+README in progress

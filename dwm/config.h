@@ -63,7 +63,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-p", "uwu what`s this?", NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *filecmd[]  = { "st", "-e", "nnn", NULL };
 static const char *tmuxcmd[]  = { "st", "-e", "tmux", NULL };
-static const char *browcmd[]  = { "tabbed", "-c", "surf", "-e", NULL };
+static const char *browcmd[]  = { "firefox", NULL };
 static const char *launcmd[]  = { "scriptlaunch", NULL };
 static const char *doutcmd[]  = { "dmenuout", NULL };
 static const char *screencmd[]  = { "scrot", "%Y-%m-%d_%wx%h.png", "-e", "mv $f ~/Images/Screenshots", "-s", NULL };
@@ -79,12 +79,12 @@ static Key keys[] = {
 	{ MODKEY|ControlMask,           XK_s,      spawn,          {.v = doutcmd } },
 	{ MODKEY,                       XK_Print,  spawn,          {.v = screencmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
-	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
+	{ MODKEY,                       XK_Up,     focusstack,     {.i = +1 } },
+	{ MODKEY,                       XK_Down,   focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_c,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ MODKEY,                       XK_Left,   setmfact,       {.f = -0.05} },
+	{ MODKEY,                       XK_Right,  setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_a,      killclient,     {0} },

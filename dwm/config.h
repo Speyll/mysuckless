@@ -8,16 +8,16 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "cherry:size=10" };
 static const char dmenufont[]       = "cherry:size=10";
-static const char col_gray1[]       = "#0c0d12";
-static const char col_gray2[]       = "#404040";
-static const char col_gray3[]       = "#e8e8e8";
-static const char col_gray4[]       = "#dddddd";
-static const char col_cyan[]        = "#8542ff";
+static const char col_backg[]       = "#161623";
+static const char col_borde[]       = "#455173";
+static const char col_forgr[]       = "#D8DEE8";
+static const char col_selfo[]       = "#161623";
+static const char col_selba[]       = "#88C0D0";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-	[SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
+	[SchemeNorm] = { col_forgr, col_backg, col_borde },
+	[SchemeSel]  = { col_selfo, col_selba,  col_selba },
+	[SchemeHid]  = { col_selba,  col_backg, col_selba  },
 };
 
 /* tagging */
@@ -29,8 +29,9 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     iscentered     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            0,             1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 1,       0,             0,           -1 },
+	{ "mpv",      NULL,       NULL,       1 << 2,       1,             1,           -1 },
+	{ "Firefox",  NULL,       NULL,       1,            1,             0,           -1 },
+	{ "st",       NULL,       NULL,       0,            1,             0,           -1 },
 };
 
 /* layout(s) */
@@ -64,7 +65,6 @@ static const char *filecmd[]  = { "st", "-e", "nnn", NULL };
 static const char *tmuxcmd[]  = { "st", "-e", "tmux", NULL };
 static const char *browcmd[]  = { "tabbed", "-c", "surf", "-e", NULL };
 static const char *launcmd[]  = { "scriptlaunch", NULL };
-static const char *dbarcmd[]  = { "dmenubar", NULL };
 static const char *doutcmd[]  = { "dmenuout", NULL };
 static const char *screencmd[]  = { "scrot", "%Y-%m-%d_%wx%h.png", "-e", "mv $f ~/Images/Screenshots", "-s", NULL };
 
@@ -76,7 +76,6 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = filecmd } },
 	{ MODKEY|ShiftMask,             XK_b,      spawn,          {.v = browcmd } },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = launcmd } },
-	{ MODKEY,                       XK_n,      spawn,          {.v = dbarcmd } },
 	{ MODKEY|ControlMask,           XK_s,      spawn,          {.v = doutcmd } },
 	{ MODKEY,                       XK_Print,  spawn,          {.v = screencmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },

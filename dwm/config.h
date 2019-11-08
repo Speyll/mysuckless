@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int gappx     = 2;        /* gaps between windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int gappx     = 0;        /* gaps between windows */
 static const unsigned int snap      = 20;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -66,7 +66,7 @@ static const char *tmuxcmd[]  = { "st", "-e", "tmux", NULL };
 static const char *browcmd[]  = { "firefox", NULL };
 static const char *launcmd[]  = { "scriptlaunch", NULL };
 static const char *doutcmd[]  = { "dmenuout", NULL };
-static const char *screencmd[]  = { "scrot", "%Y-%m-%d_%wx%h.png", "-e", "mv $f ~/Images/Screenshots", "-s", NULL };
+static const char *screencmd[]  = { "scrot", "-e", "mv $f ~/Images/Screenshots/", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */

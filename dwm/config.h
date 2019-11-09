@@ -1,12 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 0;        /* gaps between windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int gappx     = 1;        /* gaps between windows */
 static const unsigned int snap      = 20;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "cherry:size=10" };
+static const char *fonts[]          = { "cherry:size=10:antialias=false:autohint=false"
+                                        "Siji:size=10:antialias=false:autohint=false" };
 static const char dmenufont[]       = "cherry:size=10";
 static const char col_backg[]       = "#161623";
 static const char col_borde[]       = "#455173";
@@ -61,8 +62,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-p", "uwu what`s this?", NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *filecmd[]  = { "st", "-e", "nnn", NULL };
-static const char *tmuxcmd[]  = { "st", "-e", "tmux", NULL };
+static const char *filecmd[]  = { "st", "-e", "nnn", "-t", "nnn", NULL };
+static const char *tmuxcmd[]  = { "st", "-e", "tmux", "-t", "tmux", NULL };
 static const char *browcmd[]  = { "firefox", NULL };
 static const char *launcmd[]  = { "scriptlaunch", NULL };
 static const char *doutcmd[]  = { "dmenuout", NULL };

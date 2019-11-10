@@ -2,11 +2,11 @@
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int gappx     = 1;        /* gaps between windows */
-static const unsigned int snap      = 20;       /* snap pixel */
+static const unsigned int gappx     = 4;        /* gaps between windows */
+static const unsigned int snap      = 10;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "cherry:size=10:antialias=false:autohint=false"
+static const char *fonts[]          = { "cherry:size=10:antialias=false:autohint=false", 
                                         "Siji:size=10:antialias=false:autohint=false" };
 static const char dmenufont[]       = "cherry:size=10";
 static const char col_backg[]       = "#161623";
@@ -29,10 +29,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     iscentered     isfloating   monitor */
-	{ "mpv",      NULL,       NULL,       1 << 2,       1,             1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1,            1,             0,           -1 },
-	{ "st",       NULL,       NULL,       0,            1,             0,           -1 },
+	/* class      instance      title       	tags mask     iscentered     isfloating   monitor */
+	{ "mpv",      NULL,         NULL,       	1 << 2,       1,             1,           -1 },
+	{ "Firefox",  NULL,         NULL,       	1,            1,             0,           -1 },
+	{ "st",       NULL,         "scratchpad",   0,            1,             1,           -1 },
 };
 
 /* layout(s) */
@@ -62,8 +62,9 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-p", "uwu what`s this?", NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *filecmd[]  = { "st", "-e", "nnn", "-t", "nnn", NULL };
-static const char *tmuxcmd[]  = { "st", "-e", "tmux", "-t", "tmux", NULL };
+static const char *filecmd[]  = { "st", "-t", "nnn", "-e", "nnn", NULL };
+static const char *tmuxcmd[]  = { "st", "-t", "tmux", "-e", "tmux", NULL };
+static const char *scracmd[]  = { "st", "-t", "scratchpad", "-g", "70x25", "-e", "tmux", NULL };
 static const char *browcmd[]  = { "firefox", NULL };
 static const char *launcmd[]  = { "scriptlaunch", NULL };
 static const char *doutcmd[]  = { "dmenuout", NULL };
@@ -78,6 +79,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_b,      spawn,          {.v = browcmd } },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = launcmd } },
 	{ MODKEY|ControlMask,           XK_s,      spawn,          {.v = doutcmd } },
+	{ MODKEY,                       XK_s,      spawn,          {.v = scracmd } },
 	{ MODKEY,                       XK_Print,  spawn,          {.v = screencmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_Up,     focusstack,     {.i = +1 } },
@@ -89,6 +91,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_a,      killclient,     {0} },
+	{ MODKEY,                       XK_g,      setcentered,    {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
@@ -100,6 +103,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY|ControlMask,           XK_equal,  setgaps,        {.i = -5 } },
+	{ MODKEY,                       XK_equal,  setgaps,        {.i = +5 } },
+	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	TAGKEYS(                        XK_ampersand,              0)
 	TAGKEYS(                        XK_eacute,                 1)
 	TAGKEYS(                        XK_quotedbl,               2)
@@ -125,3 +131,4 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
 
+        

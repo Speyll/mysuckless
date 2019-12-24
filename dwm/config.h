@@ -6,9 +6,9 @@ static const unsigned int gappx     = 4;        /* gaps between windows */
 static const unsigned int snap      = 10;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "cherry:size=10:antialias=false:autohint=false", 
-                                        "Siji:size=10:antialias=false:autohint=false" };
-static const char dmenufont[]       = "cherry:size=10";
+static const char *fonts[]          = { "terminus:size=9:antialias=false:autohint=false", 
+                                        "Siji:size=9:antialias=false:autohint=false" };
+static const char dmenufont[]       = "terminus:size=9";
 static const char col_backg[]       = "#161623";
 static const char col_borde[]       = "#455173";
 static const char col_forgr[]       = "#D8DEE8";

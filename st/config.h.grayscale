@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "terminus:pixelsize=13:antialias=false:autohint=false";
+static char *font = "Terminus:pixelsize=12:antialias=false:autohint=false";
 
 /* disable bold, italic and roman fonts globally */
 int disablebold = 1;

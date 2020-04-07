@@ -1,5 +1,5 @@
 # Introduction
-This is my personal Suckless cleanly patched repo
+This is my personal suckless cleanly patched repo
 
 ## patches included
 

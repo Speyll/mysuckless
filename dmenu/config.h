@@ -4,15 +4,16 @@
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Terminus:size=8",
-	"Siji:size=8"
+	"Terminus:size=9",
+	"Siji:size=9",
 };
+
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#A6BBD9", "#161623" },
-	[SchemeSel] = { "#161623", "#7D97B8" },
-	[SchemeOut] = { "#A6BBD9", "#7D97B8" },
+	[SchemeNorm] = { "#fbf1c7", "#282828" },	/* white, black */
+	[SchemeSel] = { "#282828", "#98971a" }, 	/* black, green */
+	[SchemeOut] = { "#fbf1c7", "#98971a" }, 	/* white, green */
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;

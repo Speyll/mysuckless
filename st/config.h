@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Terminus:pixelsize=12:antialias=false:autohint=false";
+static char *font = "kakwafont:pixelsize=12:antialias=false:autohint=false";
 
 /* disable bold, italic and roman fonts globally */
 int disablebold = 1;
@@ -106,24 +106,24 @@ float alpha = 0.9;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
   /* 8 normal colors */
-  [0] = "#3B4252", /* black   */
-  [1] = "#BF616A", /* red     */
-  [2] = "#A3BE8C", /* green   */
-  [3] = "#EBCB8B", /* yellow  */
-  [4] = "#81A1C1", /* blue    */
-  [5] = "#B48EAD", /* purple  */
-  [6] = "#88C0D0", /* cyan    */
-  [7] = "#E5E9F0", /* white   */
+  [0] = "#3B4252",
+  [1] = "#BF616A",
+  [2] = "#A3BE8C",
+  [3] = "#EBCB8B",
+  [4] = "#81A1C1",
+  [5] = "#B48EAD",
+  [6] = "#88C0D0",
+  [7] = "#E5E9F0",
 
   /* 8 bright colors */
-  [8]  = "#4C566A", /* white   */
-  [9]  = "#BF616A", /* red     */
-  [10] = "#A3BE8C", /* green   */
-  [11] = "#EBCB8B", /* yellow  */
-  [12] = "#81A1C1", /* blue    */
-  [13] = "#B48EAD", /* purple  */
-  [14] = "#8FBCBB", /* cyan    */
-  [15] = "#ECEFF4", /* white   */
+  [8]  = "#4C566A",
+  [9]  = "#BF616A",
+  [10] = "#A3BE8C",
+  [11] = "#EBCB8B",
+  [12] = "#81A1C1",
+  [13] = "#B48EAD",
+  [14] = "#8FBCBB",
+  [15] = "#ECEFF4",
 
   /* special colors */
   [256] = "#2E3440", /* background */

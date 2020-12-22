@@ -5,8 +5,5 @@ This is my personal suckless cleanly patched repo
 
 | software  | patches |
 | ------------- | ------------- |
-| dwm  | fakefullscreen, center, ru_gaps, pertag, awesome_bar |
-| st  | alpha, boxdraw, disable bold/italic |
-| dmenu  | border, line height |
-| surf  | homepage |
-| tabbed  | none |
+| st  | alpha, solarized, no-bold color |
+| dmenu  | line height, solarized |

@@ -1,6 +1,6 @@
 This is my personal suckless cleanly patched repo
 
-Patches:
+#Patches:
 | software  | patches |
 | ------------- | ------------- |
 | dmenu  | line height, solarized |

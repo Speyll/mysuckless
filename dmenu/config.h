@@ -9,8 +9,8 @@ static const char *fonts[] = {
 	"Siji:style=Regular:size=10"
 */
 static const char *fonts[] = {
-	"IBM Plex Mono:style=Medium:pixelsize=14",
-	"Noto Emoji:pixelsize=12"
+	"IBM Plex Sans:style=Medium:pixelsize=12",
+	"Noto Emoji:pixelsize=10"
 
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */

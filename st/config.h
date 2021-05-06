@@ -5,8 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "-kakwa-kakwafont-medium-r-normal--12-120-72-72-c-60-iso8859-1";
-static char *font2[] = { "-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1" };
+
+static char *font = "IBM Plex Mono:style=Medium:pixelsize=14";
+static char *font2[] = { "Noto Emoji:pixelsize=12" };
+/* static char *font = "-kakwa-kakwafont-medium-r-normal--12-120-72-72-c-60-iso8859-1";
+static char *font2[] = { "-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1" }; */
 static int borderpx = 25;
 
 /*
